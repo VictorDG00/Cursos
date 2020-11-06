@@ -7,10 +7,9 @@ import random
 print('Bora jogar par ou ímpar')
 print('~~-'*20)
 while True:
-    while True:
+    escolha = str(input('Você quer Par ou Ímpar [P/I]? ')).upper()
+    while escolha not in 'PI':
         escolha = str(input('Você quer Par ou Ímpar [P/I]? ')).upper()
-        if escolha in 'PI':
-            break
     numMaquina = random.randint(0, 10)
     numJogador = int(input('Digite um numero'))
     soma = numJogador + numMaquina
