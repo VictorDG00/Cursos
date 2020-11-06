@@ -4,10 +4,10 @@
 
 primeiroTerm = int(input('Digite um termo para uma PA: '))
 razaoPa = int(input('Digite a razão dessa mesma PA: '))
-decimo = primeiroTerm + (10 - 1 * razaoPa)
-contador = 0
-while contador < decimo + razaoPa:
-    print(contador, end=' > ')
-    contador = contador + razaoPa
+contador = 1
+while contador <= 10:
+    print(primeiroTerm, end=' > ')
+    primeiroTerm += razaoPa
+    contador += 1
 print('fim')
 
