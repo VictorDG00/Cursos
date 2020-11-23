@@ -6,6 +6,7 @@ numero2 = int(input('Digite o segundo valor: '))
 opcao = 0
 maior = str
 while opcao != 5:
+    print('-'*20)
     opcao = int(input('''Segue as opções disponiveis para você:
 [1] Somar 
 [2] Multiplicar
@@ -28,4 +29,8 @@ while opcao != 5:
     if opcao == 4:
         numero1 = int(input('Digite o primeiro valor: '))
         numero2 = int(input('Digite o segundo valor: '))
-print('Obrigado por usar nosso sistema :D')
+    if opcao == 5:
+        print('Obrigado por usar nosso sistema :D')
+    if opcao > 5:
+        print('Por gentileza escolha uma opção valida')
+print('Adeus!')

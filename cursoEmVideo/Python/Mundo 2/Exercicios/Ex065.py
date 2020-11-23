@@ -12,7 +12,7 @@ while not escolha:
         maior = n
     if c == 1:
         menor = n
-    else:
+    elif menor > n:
         menor = n
     escolhacerta = str(input('Quer adicionar mais algum numero?: ')).strip().upper()
     if escolhacerta in 'SIMsims':
