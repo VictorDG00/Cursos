@@ -3,12 +3,7 @@
 # 0 ~ 10
 from random import randint
 
-num1 = randint(0, 10)
-num2 = randint(0, 10)
-num3 = randint(0, 10)
-num4 = randint(0, 10)
-num5 = randint(0, 10)
-listadenum = (num1, num2, num3, num4, num5)
+listadenum = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
 print('<>' * 20)
 print(listadenum)
 maior = 0
@@ -23,3 +18,5 @@ for c in listadenum:
 print(f'O menor número é: {menor}')
 print(f'O maior número é: {maior}')
 print('<>' * 20)
+print(f'O menor número é: {min(listadenum)}')
+print(f'O maior número é: {max(listadenum)}')

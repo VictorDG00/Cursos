@@ -10,13 +10,14 @@ top20 = ('São Paulo', 'Atlético-MG', 'Flamengo', 'Grêmio', 'Fluminense', 'Int
          'Ceará', 'Fortaleza', 'Corinthians', 'Athletico-PR', 'Bahia', 'Bragantino', 'Atlético-GO', 'Sport', 'Vasco',
          'Coritiba', 'Botafogo', 'Goiás')
 print('=-'*50)
-print('Os 5 Primeiros são: ', top20[0:5])
+print(f'Os 5 Primeiros são: {top20[0:5]}')
 print('=-'*50)
-print('Os 4 Ultimos são: ', top20[-4:])
+print(f'Os 4 Ultimos são: {top20[-4:]}')
 print('=-'*50)
-print('Times em ordem alfabética: ', sorted(top20))
+print(f'Times em ordem alfabética: {sorted(top20)}')
 print('=-'*50)
-for pos, c in enumerate(top20):
-    gremio = c == 'Grêmio'
-    if gremio:
-        print(f'O Grêmio está na posição °{pos+1}')
+print(f'O Grêmio está na posição {top20.index("Grêmio")+1}')
+#for pos, c in enumerate(top20):
+#    gremio = c == 'Grêmio'
+#    if gremio:
+#        print(f'O Grêmio está na posição °{pos+1}')
